@@ -1,0 +1,13 @@
+public class demo {
+    public static void main(String[] args) {
+        char ch = 'a'; 
+
+        if (Character.isLowerCase(ch)) {
+            char upperCh = Character.toUpperCase(ch);
+            System.out.println("Lowercase input: " + ch);
+            System.out.println("Uppercase output: " + upperCh);
+        } else {
+            System.out.println("The character is already in uppercase or not an alphabet: " + ch);
+        }
+    }
+}
