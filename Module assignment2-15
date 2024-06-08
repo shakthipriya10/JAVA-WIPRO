@@ -1,0 +1,35 @@
+public class FloydsTriangle {
+    public static void main(String[] args) {
+        int n = 4; 
+
+        System.out.println("Using for loop:");
+        printFloydsTriangleForLoop(n);
+
+        System.out.println("\nUsing while loop:");
+        printFloydsTriangleWhileLoop(n);
+    }
+
+ 
+    public static void printFloydsTriangleForLoop(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+
+  
+    public static void printFloydsTriangleWhileLoop(int n) {
+        int i = 1;
+        while (i <= n) {
+            int j = 1;
+            while (j <= i) {
+                System.out.print("* ");
+                j++;
+            }
+            System.out.println();
+            i++;
+        }
+    }
+}
