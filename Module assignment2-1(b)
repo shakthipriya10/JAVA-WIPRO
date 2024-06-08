@@ -1,0 +1,13 @@
+public class SameLastDigit {
+    public static void main(String[] args) {
+        int num1 = 27;
+        int num2 = 57;
+
+        boolean result = hasSameLastDigit(num1, num2);
+        System.out.println(result); // Output: true
+    }
+
+    public static boolean hasSameLastDigit(int a, int b) {
+        return (a % 10) == (b % 10);
+    }
+}
