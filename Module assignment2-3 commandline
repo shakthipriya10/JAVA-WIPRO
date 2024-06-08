@@ -1,0 +1,11 @@
+public class CommandLineArgsChecker {
+    public static void main(String[] args) {
+        if (args.length == 0) {
+            System.out.println("No Values");
+        } else {
+            // Join all arguments with a comma separator and print them
+            String result = String.join(",", args);
+            System.out.println(result);
+        }
+    }
+}
